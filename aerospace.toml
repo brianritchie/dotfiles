@@ -106,9 +106,16 @@ automatically-unhide-macos-hidden-apps = false
     alt-left = 'focus left'
     alt-right = 'focus right'
     # Move windows between accordion sections
-    alt-shift-leftSquareBracket = ['join-with left', 'layout accordion']   # Move to left accordion
-    alt-shift-rightSquareBracket = ['join-with right', 'layout accordion'] # Move to right accordion
-
+    alt-shift-leftSquareBracket = [
+        'join-with left',
+        'focus left',  # Focus the accordion container
+        'layout accordion'  # Ensure accordion layout
+    ]
+    alt-shift-rightSquareBracket = [
+        'join-with right',
+        'focus right',  # Focus the accordion container
+        'layout accordion'  # Ensure accordion layout
+    ]
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
     alt-slash = 'layout tiles horizontal vertical'
